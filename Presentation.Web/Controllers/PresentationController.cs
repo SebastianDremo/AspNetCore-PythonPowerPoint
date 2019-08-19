@@ -1,4 +1,5 @@
 using Microsoft.AspNetCore.Mvc;
+using Presentation.Web.Models;
 
 namespace Presentation.Web.Controllers
 {
@@ -7,9 +8,9 @@ namespace Presentation.Web.Controllers
     public class PresentationController : ControllerBase
     {
         // [HttpGet("get-presentation")]
-        // public FileResult GetPresentation([FromBody])
+        // public FileResult GetPresentation([FromBody] PresentationFile presentation)
         // {
-
+            
         // }
     }
 }
