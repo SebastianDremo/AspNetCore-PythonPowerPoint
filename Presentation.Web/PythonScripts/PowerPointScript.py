@@ -1,4 +1,3 @@
-#First argument is for name of a chart, second is first value of the chart and so on 
 import sys
 from pptx import Presentation
 from pptx.chart.data import CategoryChartData
@@ -16,6 +15,7 @@ chart_slide = presentation.slides.add_slide(presentation.slide_layouts[5])
 
 chart_data = CategoryChartData()
 chart_data.categories = ['X', 'Y']
+#First argument is for name of a chart, second is first value of the chart and so on 
 chart_data.add_series(sys.argv[1], (sys.argv[2], sys.argv[3]))
 
 chart_slide.shapes.add_chart(XL_CHART_TYPE.COLUMN_CLUSTERED, Inches(2), Inches(2), Inches(6), Inches(4.5), chart_data)
